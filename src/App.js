@@ -3,7 +3,8 @@ import MovieHeader from './components/movieheader';
 import MovieList from './components/movielist';
 import Movie from './components/movie';
 import Authentication from './components/authentication';
-import {HashRouter, Routes,  Route} from 'react-router-dom';
+import Signup from './components/Signup';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/movielist" element={<MovieList />}/>
           <Route path="/movie/:movieId" element={<Movie />}/>
           <Route path="/signin" element={<Authentication />}/>
+          <Route path="/signup" element={<Signup />}/>
           {/*... other routes */}
         </Routes>
       </HashRouter>
